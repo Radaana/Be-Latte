@@ -12,7 +12,7 @@ _arc/
 *.psd
 *.editorconfig
 *.json
-*.js
+gulpfile.js
 .idea
 .publish
 ex_files
