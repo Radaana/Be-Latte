@@ -24,22 +24,28 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link navigation__link--emptyPLace">About us</a></li>
+            <li class="navigation__item"><a href="#about-us" class="navigation__link navigation__link--emptyPLace">About us</a></li>
 
-            <li class="navigation__item"><a href="#" class="navigation__link">Menu</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+            <li class="navigation__item"><a href="#menu" class="navigation__link">Menu</a></li>
+            <li class="navigation__item"><a href="#blog" class="navigation__link">Blog</a></li>
+            <li class="navigation__item"><a href="#location" class="navigation__link">Contact</a></li>
           </ul>
         </nav>
+        <div class="header__container">
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hamburger-menu__bars"></div>
+          </div>
+        </div>
+        
       </header>
 
       <div class="welcome">
         <h2 class="welcome__text welcome__text--top">Welcome to Be Latte</h1>
         <p class="welcome__text">Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.</p>
-        <a href="#" class="button">See menu</a>
+        <a href="#menu" class="button button--centered">See menu</a>
       </div>
     </section>
-    <section class="promo section">
+    <section class="promo section" id="about-us">
       <div class="container">
         <h3 class="promo__header">
           Coffee never tasted <span class="promo__header--underline">so good</span class="promo__header--underline">!
@@ -55,7 +61,7 @@
       </div>
     </section>
     <section class="section">
-      <div class="container menu">
+      <div class="container menu" id="menu">
         <h1 class="section__title">
           Menu
         </h1>
@@ -194,8 +200,8 @@
         </div>
       </div>
     </section>
-    <section class="section">
-      <div class="container">
+    <section class="section" id="blog">
+      <!-- <div class="container"> -->
         <h1 class="section__title">
           Testimonials
         </h1>
@@ -206,21 +212,45 @@
             <div class="testimonials__number">
               .01
             </div>
-            <div class="testimonials__slider">
-              <div class="testomonials__foto">
-                <img src="img/photo1.png" alt="" class="testimonials__img">
-              </div>
-              <h4 class="testimonials__title">
-                Chris Parker
-              </h4>
-              <p class="testimonials__text">
-                Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.
-              </p>
-            </div>
+            <ul class="testimonials__slider">
+              <li class="testimonials__item testimonials__item--active">
+                <div class="testomonials__foto">
+                  <img src="img/photo1.png" alt="" class="testimonials__img">
+                </div>
+                <h4 class="testimonials__title">
+                  Chris Parker
+                </h4>
+                <p class="testimonials__text">
+                  1Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.
+                </p>
+              </li>
+              <li class="testimonials__item">
+                <div class="testomonials__foto">
+                  <img src="img/photo2.png" alt="" class="testimonials__img">
+                </div>
+                <h4 class="testimonials__title">
+                  Charles Shim
+                </h4>
+                <p class="testimonials__text">
+                  2Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.
+                </p>
+              </li>
+              <li class="testimonials__item">
+                <div class="testomonials__foto">
+                  <img src="img/photo1.png" alt="" class="testimonials__img">
+                </div>
+                <h4 class="testimonials__title">
+                  Rob Thomas
+                </h4>
+                <p class="testimonials__text">
+                  3Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.
+                </p>
+              </li>
+            </ul>
             <ul class="dots">
-              <li class="dots__item dots__item--active"><a href="#" class="dots__link"></a></li>
-              <li class="dots__item"><a href="#" class="dots__link"></a></li>
-              <li class="dots__item"><a href="#" class="dots__link"></a></li>
+              <li class="dots__item"><a href="#" class="dots__link dots__link--active" data-page="0"></a></li>
+              <li class="dots__item"><a href="#" class="dots__link" data-page="1"></a></li>
+              <li class="dots__item" ><a href="#" class="dots__link" data-page="2"></a></li>
             </ul>
           </div>
         </div>
@@ -229,10 +259,10 @@
               <use xlink:href="img/sprite.svg#coffee"/>
             </svg>
         </div>
-      </div>
+      <!-- </div> -->
     </section>
-    <section class="section">
-      <div class="container">
+    <section class="section" id="location">
+      <!-- <div class="container"> -->
           <h1 class="section__title">
               Location
           </h1>
@@ -284,7 +314,7 @@
           </div>
 
         </div>
-      </div>
+      <!-- </div> -->
 
       <footer class="footer centered">
         <!-- <div class="centered"> -->
@@ -317,7 +347,7 @@
   
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYiO8TuA5Z4ZsOM5CpeiN0F9B_SP_U7zY&callback=initMap">
-  </script>
+    </script>
   <script src="js/script.min.js"></script>
 </body>
 </html>
