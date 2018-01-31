@@ -1,0 +1,29 @@
+.dots {
+  position: relative;
+  z-index: 10;
+}
+
+.dots__item {
+  display: inline-block;
+  margin-right: 6px;
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.dots__link {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+
+  &--active {
+    border: 1px solid #fff;
+    background: $gray;
+  }
+}
+

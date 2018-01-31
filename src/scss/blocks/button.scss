@@ -1,0 +1,29 @@
+.button {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    padding: rem(19px) rem(55px);
+    text-transform: uppercase;
+    border: 1px solid #fff;
+
+    &--menu {
+        color: $dark;
+        border-color: $dark;
+        // display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    // &--centered {
+    //     @include screen-sm { 
+            
+    //         margin: 0 auto;
+    //         text-align: center;
+    //     }
+    // }
+
+    &:hover {
+        background-color: $yellow;
+    }
+}

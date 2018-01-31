@@ -1,0 +1,18 @@
+$font-size:                   16px;
+
+$screen-xs:                   480px;
+$screen-sm:                   768px;
+$screen-md:                   992px;
+$screen-lg:                   1200px;
+
+
+// Colors
+
+$yellow :                     #f5d76e;
+$dark :                       #2f2f2f;
+$gray :                       #39312f;
+
+
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}

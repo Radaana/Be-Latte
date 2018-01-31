@@ -1,0 +1,10 @@
+.greeting {
+  background-image: url('../img/greeting-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  position: relative;
+}
