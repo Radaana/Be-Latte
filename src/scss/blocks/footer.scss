@@ -1,7 +1,10 @@
-.footer {
-  height: 300px;
-  width: 100%;
-  background-color: $gray;
-  flex-direction: column;
-  padding: 15px;
+.footer
+{
+    flex-direction: column;
+
+    width: 100%;
+    height: rem(300px);
+    padding: rem(15px);
+
+    background-color: $gray;
 }

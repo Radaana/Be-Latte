@@ -1,25 +1,33 @@
-.promo {
-  height: 300px;
-  max-width: 760px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 15px;
+.promo
+{
+    display: flex;
+    flex-direction: column;
+
+    max-width: rem(760px);
+    height: rem(300px);
+    margin: 0 auto;
+    padding: rem(15px);
+
+    text-align: center;
+
+    justify-content: center;
 }
 
-.promo__header {
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: bold;
-  font-size: 32px;
+.promo__header
+{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: rem(32px);
+    font-weight: bold;
 
-  &--underline {
-    text-decoration: underline;
-    font-weight: bolder;
-  }
+    &--underline
+    {
+        font-weight: bolder;
+
+        text-decoration: underline;
+    }
 }
 
-.promo__text {
-  font-family: 'Lato', sans-serif;
+.promo__text
+{
+    font-family: 'Lato', sans-serif;
 }

@@ -1,29 +1,29 @@
-.button {
-    display: inline-block;
-    color: #fff;
+.button
+{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    padding: rem(19px) rem(55px);
-    text-transform: uppercase;
-    border: 1px solid #fff;
 
-    &--menu {
+    display: inline-block;
+
+    padding: rem(19px) rem(55px);
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: rem(1px) solid #fff;
+
+    &--menu
+    {
+        margin: 0 auto;
+
+        text-align: center;
+
         color: $dark;
         border-color: $dark;
-        // display: block;
-        margin: 0 auto;
-        text-align: center;
     }
 
-    // &--centered {
-    //     @include screen-sm { 
-            
-    //         margin: 0 auto;
-    //         text-align: center;
-    //     }
-    // }
-
-    &:hover {
+    &:hover
+    {
         background-color: $yellow;
     }
 }

@@ -1,14 +1,18 @@
-.logo__link {
-  display: block;
-  width: 154px;
-  height: 127px;
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  margin-left: -77px;
+.logo__link
+{
+    position: absolute;
+    top: rem(5px);
+    left: 50%;
+
+    display: block;
+
+    width: rem(154px);
+    height: rem(127px);
+    margin-left: rem(-77px);
 }
 
-.logo__svg {
-  width: 100%;
-  height: 100%;
+.logo__svg
+{
+    width: 100%;
+    height: 100%;
 }

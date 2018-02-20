@@ -1,28 +1,37 @@
-.icons {
-  display: block;
+.icons
+{
+    display: block;
 }
 
-.icons__item {
-  display: inline-block;
-  margin-right: 25px;
+.icons__item
+{
+    display: inline-block;
 
-  &:last-child {
-    margin-right: 0;
-  }
+    margin-right: rem(25px);
+
+    &:last-child
+    {
+        margin-right: 0;
+    }
 }
 
-.icons__link {
-  display: inline-block;
-  width: 26px;
-  height: 26px;
-  fill: #fff;
+.icons__link
+{
+    display: inline-block;
 
-  &:hover {
-    fill: $yellow;
-  }
+    width: rem(26px);
+    height: rem(26px);
+
+    fill: #fff;
+
+    &:hover
+    {
+        fill: $yellow;
+    }
 }
 
-.icons__svg {
-  width: 100%;
-  height: 100%;
+.icons__svg
+{
+    width: 100%;
+    height: 100%;
 }

@@ -1,52 +1,71 @@
-.hamburger-menu {
-    vertical-align: middle;
+.hamburger-menu
+{
     position: relative;
-    height: 26px;
-    width: 35px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
 
-    
-    &--close{
-        .hamburger-menu__bars {
+    display: flex;
+
+    width: rem(35px);
+    height: rem(26px);
+
+    cursor: pointer;
+    vertical-align: middle;
+
+    align-items: center;
+
+
+    &--close
+    {
+        .hamburger-menu__bars
+        {
             transform: rotate(45deg);
 
-            &:before {
+            &:before
+            {
                 transform: rotate(45deg);
+
                 opacity: 0;
             }
 
-            &:after {
+            &:after
+            {
                 transform: rotate(-90deg);
-
             }
         }
     }
 }
 
-.hamburger-menu__bars {
-    &, &:before, &:after {
+.hamburger-menu__bars
+{
+    &,
+    &:before,
+    &:after
+    {
+        width: rem(35px);
+        height: rem(4px);
+
+        transition: transform .3s;
+
+        border-radius: rem(3px);
         background: $yellow;
-        width: 35px;
-        height: 4px;
-        border-radius: 3px;
-        transition: transform 0.3s;
     }
 
-    &:before, &:after {
-        content: "";
-        display: block;
+    &:before,
+    &:after
+    {
         position: absolute;
+
+        display: block;
+
+        content: '';
     }
 
-    &:before {
+    &:before
+    {
         top: 0;
     }
 
-    &:after {
+    &:after
+    {
         bottom: 0;
     }
-
-    
 }
